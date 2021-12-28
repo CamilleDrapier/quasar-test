@@ -1,17 +1,10 @@
 <template>
-  <div>
-    <OtherComponent v-show="visible" />
-  </div>
+  <q-img v-show="visible" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
 </template>
 
 <script>
-import OtherComponent from './OtherComponent.vue'
-
 export default {
   name: 'ShowComponent',
-  components: {
-    OtherComponent
-  },
   data () {
     return {
       visible: true
