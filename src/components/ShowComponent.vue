@@ -1,8 +1,6 @@
 <template>
   <div>
-    <keep-alive>
-      <OtherComponent v-if="visible" />
-    </keep-alive>
+    <OtherComponent v-show="visible" />
   </div>
 </template>
 
@@ -10,7 +8,7 @@
 import OtherComponent from './OtherComponent.vue'
 
 export default {
-  name: 'KeepAliveComponent',
+  name: 'ShowComponent',
   components: {
     OtherComponent
   },
