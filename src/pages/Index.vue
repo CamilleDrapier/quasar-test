@@ -3,7 +3,7 @@
   <div v-if="visible">
     <span>Visible</span>
     <div v-for="n in 10" :key="n">
-      <KeepAliveComponent />
+      <ShowComponent />
     </div>
   </div>
 </template>
@@ -11,12 +11,12 @@
 <script>
 import { defineComponent } from 'vue'
 
-import KeepAliveComponent from '../components/KeepAliveComponent.vue'
+import ShowComponent from '../components/ShowComponent.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    KeepAliveComponent
+    ShowComponent
   },
   data () {
     return {
