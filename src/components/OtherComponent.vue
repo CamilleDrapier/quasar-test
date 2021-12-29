@@ -1,9 +1,6 @@
 <template>
   <div>
-    <span>Menu</span>
-    <q-menu>
-      <span>TOTO</span>
-    </q-menu>
+    <span>Span</span>
   </div>
 </template>
 
